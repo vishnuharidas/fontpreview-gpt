@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FontPreviewGPT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>FontPreviewGPT</h1>
+
+    <div class="controls">
+        <label for="font-size">Font size:</label>
+        <input type="range" id="font-size" min="0" max="100" value="24">
+
+        <label for="color">Text color:</label>
+        <input type="color" id="color">
+
+        <label>
+            <input type="checkbox" id="bold">
+            Bold
+        </label>
+        <label>
+            <input type="checkbox" id="italic">
+            Italic
+        </label>
+        <label>
+            <input type="checkbox" id="underline">
+            Underline
+        </label>
+        <label>
+            <input type="checkbox" id="strikethrough">
+            Strikethrough
+        </label>
+        <label>
+            <input type="checkbox" id="monospace">
+            Monospace
+        </label>
+
+        <label for="font-family">Font family:</label>
+        <select id="font-family">
+            <option value="Arial">Arial</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Courier New">Courier New</option>
+        </select>
+
+        <button id="reset">Reset</button>
+        <button id="randomStyle">Random Style</button>
+    </div>
+
+    <div id="preview" class="preview normal">The quick brown fox jumps over the lazy dog</div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
