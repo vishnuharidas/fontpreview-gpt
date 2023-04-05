@@ -47,3 +47,15 @@ h1 {
 .normal {
     font-family: Arial, sans-serif;
 }
+
+.notice {
+    margin-top: 20px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  .notice:hover {
+    color: rgba(0, 0, 0, 0.8);
+  }
+  
