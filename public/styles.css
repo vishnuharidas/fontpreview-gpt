@@ -1,52 +1,123 @@
+/* Add or modify the existing styles in the styles.css file */
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
     margin: 0;
-    padding: 2rem;
-}
-
-h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.controls {
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .controls {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-
-.preview {
-    font-size: 24px;
-    border: 1px solid #ccc;
-    padding: 1rem;
-}
-
-/* Add this to the existing styles.css file */
-
-.bold {
-    font-weight: bold;
-}
-
-.italic {
-    font-style: italic;
-}
-
-.underline {
-    text-decoration: underline;
-}
-
-.strikethrough {
-    text-decoration: line-through;
-}
-
-.monospace {
-    font-family: "Courier New", monospace;
-}
-
-.normal {
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  input[type="range"],
+  input[type="color"] {
+    margin-bottom: 0;
+  }
+  
+  button,
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"],
+  label,
+  input[type="checkbox"],
+  select {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  button:hover,
+  input[type="submit"]:hover,
+  input[type="reset"]:hover,
+  input[type="button"]:hover,
+  label:hover,
+  select:hover {
+    border-color: #777;
+    background-color: #eee;
+  }
+  
+  input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+  }
+  
+  input[type="color"] {
+    padding: 0;
+  }
+  
+  .preview {
     font-family: Arial, sans-serif;
-}
+    font-size: 24px;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .notice {
+    margin-top: 20px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  .notice:hover {
+    color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Existing text styles */
+  .bold {
+    font-weight: bold;
+  }
+  
+  .italic {
+    font-style: italic;
+  }
+  
+  .underline {
+    text-decoration: underline;
+  }
+  
+  .strikethrough {
+    text-decoration: line-through;
+  }
+  
+  .monospace {
+    font-family: 'Courier New', monospace;
+  }
+  
+  .normal {
+    font-family: Arial, sans-serif;
+  }
+  
 
 .notice {
     margin-top: 20px;
